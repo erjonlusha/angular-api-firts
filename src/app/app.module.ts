@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { EmployeeCreateComponent } from './employee-create/employee-create.component';
 import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { DiskListComponent } from './disk-list/disk-list.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
     AppComponent,
     EmployeeCreateComponent,
     EmployeeEditComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    DiskListComponent
   ],
   imports: [
     BrowserModule,

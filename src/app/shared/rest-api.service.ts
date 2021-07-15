@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Employee } from '../shared/employee';
+import { Disk } from '../shared/disk';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 
@@ -12,6 +13,7 @@ export class RestApiService {
 
   // Define API
   apiURL = 'http://localhost:3010';
+  apiURLdisks = 'http://localhost:3010/dischi';
 
   constructor(private http: HttpClient) { }
 
@@ -33,6 +35,17 @@ export class RestApiService {
         retry(1),
         catchError(this.handleError)
       )
+  }
+
+  // HttpClient API get() method => Fetch employees list
+  getDisks(): Observable<Disk> {
+    // console.log(this.http.get<Disk>(`${this.apiDischi}`))
+    return this.http.get<Disk>(this.apiURLdisks)
+      .pipe(
+        retry(1),
+        catchError(this.handleError)
+      )
+
   }
 
   // HttpClient API get() method => Fetch employee
