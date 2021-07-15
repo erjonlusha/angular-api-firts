@@ -1,0 +1,32 @@
+.cds_container {
+  padding: 100px 0;
+  ol{
+    width: 100%!important;
+      .cd {
+          flex-basis: 200px;
+          padding: 20px;
+          margin: 10px 20px;
+          background: rgb(46, 58, 70);
+          text-align: center;
+          
+          img {
+              max-height: 160px;
+              max-width: 160px;
+            }
+          
+          h3 {
+              margin: 20px 0;
+              color: white;
+              font-size: 22px;
+              text-transform: uppercase;
+            }
+            
+            span, small{color: grey;}
+            
+            .author {
+                color: grey;
+                font-size: 20px;
+            }
+        }
+    }
+}

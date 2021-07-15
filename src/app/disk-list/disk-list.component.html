@@ -1,0 +1,53 @@
+<div class="container">
+
+    <div class="cds_container container d-flex justify-content-center align-items-center flex-wrap">
+        <ol class="d-flex flex-direction-row flex-wrap justify-content-space-around">
+            <li class="cd d-flex justify-content-flex-start align-items-center flex-column" *ngFor="let disk of Disk">
+                <img src="{{disk.poster}}" alt="">
+                <h3>{{disk.title}}</h3>
+                <span class="author">{{disk.author}}</span>
+                <span>{{disk.genre}}</span>
+                <small class="year">{{disk.year}}</small>
+            </li>
+        </ol>
+    </div>
+
+</div>
+
+
+
+
+
+
+<!-- Disks list table, it hides when there is no employee
+<div *ngIf="Disk.length !== 0">
+  <h3 class="mb-3 text-center">Disks List</h3>
+
+  <div class="col-md-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Copertina Album</th>
+          <th scope="col">Titolo</th>
+          <th scope="col">Autore</th>
+          <th scope="col">Genere</th>
+          <th scope="col">Anno</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let disk of Disk">
+          <td>                <img src="{{disk.poster}} " alt=""></td>
+          <td>{{disk.title}}</td>
+          <td>{{disk.author}}</td>
+          <td>{{disk.genre}}</td>
+          <td>{{disk.year}}</td>
+          <td>
+             <span class="edit btn btn-primary" routerLink="/employee-edit/{{employee.id}}">Edit</span>
+            <span class="delete btn btn-danger" (click)="deleteEmployee(employee.id)">Delete</span> 
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div> -->
