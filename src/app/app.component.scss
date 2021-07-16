@@ -12,10 +12,11 @@ body {
 }
 nav{
     .active {
-      border-radius: 18px;
-      background-color: #29619640;
-      filter: drop-shadow(2px 4px 6px rgb(3, 30, 88));
-        box-shadow: inset 0px 0px 15px 4px #1f2d3b;
+        border-radius: 18px;
+        background-color: #29619640;
+        // filter: drop-shadow(2px 4px 6px rgb(3, 30, 88));
+        // box-shadow: inset 0px 0px 15px 4px #1f2d3b;
+        box-shadow: inset 2px 0px 15px 10px #1f2d3b;
     }
     ul{
         li{

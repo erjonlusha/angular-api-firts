@@ -27,9 +27,9 @@
             <td>{{employee.name}}</td>
             <td>{{employee.email}}</td>
             <td>{{employee.phone}}</td>
-            <td>
-              <span class="edit btn btn-primary" routerLink="/employee-edit/{{employee.id}}">Edit</span>
-              <span class="delete btn btn-danger" (click)="deleteEmployee(employee.id)">Delete</span>
+            <td class="d-flex justify-content-around">
+                <span class="edit btn btn-primary  m-2" routerLink="/employee-edit/{{employee.id}}">Edit</span>
+                <span class="delete btn btn-danger  m-2" (click)="deleteEmployee(employee.id)">Delete</span>
             </td>
           </tr>
         </tbody>
